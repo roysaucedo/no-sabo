@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡No Sabo!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section>
+        <h1>¡No Sabo!</h1>
+        <div class="content">
+            <img src="https://i.pinimg.com/originals/2a/a4/d1/2aa4d1d533eb2b98a3fa7ae055d7a0c6.gif" alt="Koala">
+             
+             <button id="quiz-button">Take the quiz</button>
+        </div>
+        <div class="form-container hide" id="form-container">
+            <h1>¡Órale!</h1>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejODavAbMU4G_YJdX94WF8ZG2uAcCn6Ot9hP3TgTxjYNgACQ/viewform?embedded=true" width="640" height="1106" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        
+    </section>
+
+    <script>
+        document.getElementById("quiz-button").addEventListener("click", function() {
+            document.getElementById("form-container").classList.remove("hide"); // Show the form
+            this.style.display = "none"; // Hide the button
+        });
+    </script>
+    
+
+</body>
+</html>
