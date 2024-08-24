@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡No Sabo!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 <body>
     <section>
         <h1>¡No Sabo!</h1>
+        
         <div class="content">
-            <img src="https://i.pinimg.com/originals/2a/a4/d1/2aa4d1d533eb2b98a3fa7ae055d7a0c6.gif" alt="Koala">
-             
-             <button id="quiz-button">Take the quiz</button>
+            <img data-aos="flip-left" src="https://i.pinimg.com/originals/2a/a4/d1/2aa4d1d533eb2b98a3fa7ae055d7a0c6.gif" alt="Koala">
+            <div class="desc-div">
+                <h2></h2>
+                <p data-aos="zoom-in-up">We’re on a mission to make learning Spanish as fun and easy as possible, but we need your help! Your feedback is invaluable in shaping the future of ¡No Sabo!—whether it's adding new features, improving our lessons, or just making the experience even better!</p>
+                <p data-aos="zoom-in-up">Take a few minutes to complete our survey and let us know how we’re doing. Plus, as a thank you, you'll get a sneak peek at some exciting updates we have in store!</p>
+                <p data-aos="zoom-in-up">Click the button below and share your thoughts with us. ¡Gracias!</p>
+            </div>
+            
+             <button data-aos="zoom-in-up" id="quiz-button">Take the quiz</button>
         </div>
-        <div class="form-container hide" id="form-container">
-            <h1>¡Órale!</h1>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejODavAbMU4G_YJdX94WF8ZG2uAcCn6Ot9hP3TgTxjYNgACQ/viewform?embedded=true" width="640" height="1106" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div data-aos="zoom-in-up" class="form-container hide" id="form-container">
+            <h1 data-aos="zoom-in-up">¡Órale!</h1>
+            <iframe data-aos="zoom-in-up" src="https://docs.google.com/forms/d/e/1FAIpQLSejODavAbMU4G_YJdX94WF8ZG2uAcCn6Ot9hP3TgTxjYNgACQ/viewform?embedded=true" width="640" height="1106" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
         
     </section>
@@ -29,6 +40,7 @@
             document.getElementById("form-container").classList.remove("hide"); // Show the form
             this.style.display = "none"; // Hide the button
         });
+        AOS.init();
     </script>
     
 
